@@ -31,7 +31,7 @@ def init_driver():
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
     options.add_experimental_option("detach", True)
 
-    # Initialize normal Chrome WebDriver (make sure chromedriver is installed and in PATH*)
+    # Initialize normal Chrome WebDriver (make sure chromedriver is installed and in PATH)
     driver = webdriver.Chrome(options=options)
     return driver
 
@@ -131,4 +131,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
